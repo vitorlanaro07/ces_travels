@@ -1,0 +1,162 @@
+:root{
+    --gray: #34393d;
+    --orange: #d9593f;
+    --gray-white: #7e7979;;
+}   
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Economica', sans-serif;
+}
+
+/* Header beggining */
+
+header{
+    text-align: center;
+}
+
+.bar{
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-color: var(--gray);
+    width: 100%;
+    height: 8vw;
+}
+
+.logo{
+    transform: scale(0.7);
+    margin: -32px auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--gray);
+    position: relative;
+    width: 100%;
+    height: 15vw;
+}
+
+.menu a{
+    background-color: var(--gray);
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.7em 1em;
+    text-align: center;
+    font-size: 1em;
+    align-self: center;
+    border: 1px #FFF solid;
+    border-radius: 3px;
+}
+/* Header end */
+/* SlideShow beggining */
+
+.slideshow{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /*  */
+    position: relative;
+}
+
+.btns_slideshow{
+    position: absolute;
+    background-color: var(--gray);
+    color: #FFF;
+    font-size: 1.5em;
+    padding: .2em;
+    opacity: .5;
+    top: 40%;
+}
+
+.btn_left{
+    left: 0;
+}
+
+.btn_right{
+    right: 0;
+}
+
+.display_names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: .6;
+    background-color: var(--gray-white);
+    width: 100%;
+    box-shadow: black 1px 1px 1px;
+    margin: 0 0 5em;
+}
+
+.names{
+    font-size: 2em;
+    opacity: 1;
+    text-shadow: 1px 1px 2px  black;
+}
+
+
+/* SlideShow END */
+
+/*  Place to go Start */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 0 12vw;
+}
+
+.id_place{
+    font-size: 5em;
+    color: var(--gray);
+}
+
+.name_place{
+    font-size: 2.5em;
+    color: var(--orange);
+    margin-bottom: .5em;
+}
+
+.details_place{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 0.7em;
+}
+
+.about_place{
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 0.4em;
+}
+
+.btn_detalhes{
+    margin: 3vw 0 20vw;
+    display: flex;
+    flex-direction: row;
+    width: 38vw;
+    background-color: #7e7979;
+    font-size: 1em;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px .5em;
+    text-decoration: none;
+}
+
+.principal_color{
+    background-color: var(--orange);
+    padding: 0.7em;
+}
+
+.other_color i {
+    color: #FFF;
+    font-weight: 900;
+}
+
+
