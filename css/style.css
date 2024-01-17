@@ -9,9 +9,29 @@
     margin: 0;
     font-size: 16px;
     font-family: 'Economica', sans-serif;
+    color: hsl(0, 0%, 100%);
 }
 
 /* Header beggining */
+
+#button_to_top{
+    position: fixed;
+    z-index: 99;
+    opacity: .7;
+    font-size: 2em;
+    border: none;
+    background-color: var(--gray);
+    bottom: 1em;
+    right: 1em;
+    text-align: center;
+    padding: 0.1em 0.4em;
+    border-radius: 10px;
+    display: none;
+}
+
+#button_to_top i{
+    font-size: 1em;
+}
 
 header{
     text-align: center;
@@ -19,16 +39,13 @@ header{
 
 .bar{
     content: "";
-    display: inline-block;
     position: relative;
     background-color: var(--gray);
-    width: 100%;
-    height: 8vw;
+    height: 13vw;
 }
 
 .logo{
-    transform: scale(0.7);
-    margin: -32px auto;
+    width: 12em;
 }
 
 .menu{
@@ -37,22 +54,35 @@ header{
     justify-content: space-evenly;
     background-color: var(--gray);
     position: relative;
-    width: 100%;
-    height: 15vw;
+    height: max-content;
+    padding: 2px;
 }
 
 .menu a{
     background-color: var(--gray);
-    color: #FFF;
     text-decoration: none;
-    padding: 0.7em 1em;
+    padding: 0.7em 0.6em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     align-self: center;
     border: 1px #FFF solid;
-    border-radius: 3px;
+    border-radius: 1px;
+}
+
+.select{
+    color: var(--orange);
 }
 /* Header end */
+
+.header_title p{
+    font-size: 15vw;
+    color: var(--orange);
+    font-weight: 900;
+    text-shadow: #34393d 2px 1px 2px;
+    text-align: center;
+    margin: 1em 0 1.5em;
+}
+
 /* SlideShow beggining */
 
 .slideshow{
@@ -64,14 +94,19 @@ header{
     position: relative;
 }
 
+.slides{
+    border: 1px solid rgba(0, 0, 0, 0.473);
+}
+
 .btns_slideshow{
     position: absolute;
     background-color: var(--gray);
     color: #FFF;
-    font-size: 1.5em;
-    padding: .2em;
-    opacity: .5;
-    top: 40%;
+    font-size: 2em;
+    padding: 0.2em;
+    opacity: .6;
+    top: 25%;
+    border-radius: 25px;
 }
 
 .btn_left{
@@ -86,17 +121,18 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    opacity: .6;
-    background-color: var(--gray-white);
+    opacity: 1;
+    background-color: var(--gray);
     width: 100%;
     box-shadow: black 1px 1px 1px;
     margin: 0 0 5em;
 }
 
 .names{
-    font-size: 2em;
+    font-size: 11vw;
     opacity: 1;
     text-shadow: 1px 1px 2px  black;
+    color: #FFF;
 }
 
 
@@ -122,15 +158,22 @@ header{
 }
 
 .details_place{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
-    margin-bottom: 0.7em;
+    margin-bottom: 1.3em;
+    color: #000;
 }
 
 .about_place{
     font-size: 1em;
     font-weight: 300;
     margin-bottom: 0.4em;
+    font-weight: bold;
+    color: #000;
+}
+
+.about_place a{
+    color: #000;
 }
 
 .btn_detalhes{
@@ -159,4 +202,18 @@ header{
     font-weight: 900;
 }
 
+footer .bar{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vw 0 1vw;
+}
+
+footer .footer_text{
+    color: #FFF;
+    font-size: .8em;
+    margin: 1em 0 3em;
+    opacity: 0.7;
+}
 

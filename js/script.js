@@ -29,3 +29,25 @@ function showDivs(n){
     names[slideIndex-1].style.display = "block";
 }
 
+
+// Button while scroll
+let myButton = document.getElementById('button_to_top');
+
+console.log(myButton);
+
+window.onscroll = function (){scrollFcuntion()};
+
+function scrollFcuntion(){
+    console.log(document.documentElement.scrollTop);
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+
+        myButton.style.display = "block";
+    } else {
+        myButton.style.display = "none";
+    }
+}
+
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
