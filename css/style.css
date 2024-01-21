@@ -219,6 +219,28 @@ header{
     font-weight: 900;
 }
 
+.cities_section{
+    padding: 0.3em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description_cities{
+    color: #000;
+    margin: 0 0 2em;
+}
+
+.button_cities{
+    background-color: var(--gray);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0.3em;
+    margin: 0 0 2em;
+    border: 1px solid var(--gray);
+}
+
 footer .bar{
     height: max-content;
     display: flex;
