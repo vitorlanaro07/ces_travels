@@ -4,6 +4,12 @@
     --gray-white: #7e7979;;
 }   
 
+html{
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -36,6 +42,8 @@
 header{
     text-align: center;
 }
+
+
 
 .bar{
     content: "";
@@ -72,17 +80,19 @@ header{
 .select{
     color: var(--orange);
 }
+
+
 /* Header end */
 
 .header_title p{
-    font-size: 15vw;
+    font-size: 3.4em;
     color: var(--orange);
     font-weight: 900;
     text-shadow: #34393d 2px 1px 2px;
     text-align: center;
     margin: 1em 0 1.5em;
-}
 
+}
 /* SlideShow beggining */
 
 .slideshow{
@@ -146,7 +156,7 @@ header{
 }
 
 .names{
-    font-size: 11vw;
+    font-size: 2em;
     opacity: 1;
     text-shadow: 1px 1px 2px  black;
     color: #FFF;
@@ -156,11 +166,31 @@ header{
 /* SlideShow END */
 
 /*  Place to go Start */
+.container-viagens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .about{
+    width: 40vw;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    margin: 0 12vw;
+    margin: 0 auto;
+    align-self: center;
+}
+
+@media screen and (max-width: 480px){
+    .container-viagens{
+        flex-wrap: nowrap;
+        flex-direction: column
+    }
+
+    .about{
+        width: 80%;
+        margin: 0 auto 2em;
+    }
 }
 
 .id_place{
@@ -194,10 +224,10 @@ header{
 }
 
 .btn_detalhes{
-    margin: 3vw 0 20vw;
+    margin: 1em 0;
     display: flex;
     flex-direction: row;
-    width: 38vw;
+    width: 10em;
     background-color: #7e7979;
     font-size: 1em;
     color: #FFF;
@@ -255,4 +285,5 @@ footer .footer_text{
     margin: 1em 0 3em;
     opacity: 0.7;
 }
+
 

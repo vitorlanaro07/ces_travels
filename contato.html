@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&STravels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <button id="button_to_top" onclick="topFunction()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <header>
+        <div class="bar"></div>
+        <img src="images/logo.svg" class="logo">
+        <div class="menu">
+            <a href="index.html" >Viagens</a>
+            <a href="quem-somos.html" >Quem somos</a>
+            <a href="contato.html" class="select">Contato</a>
+        </div>
+    </header>
+
+    <div class="header_title">
+        <p>Contato</p>
+    </div>
+
+    <section class="contato">
+        <form action="/sending" method="post" class="form_contato">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="nome">
+
+            <label for="sname">Sobrenome</label>
+            <input type="text" id="sname" name="sobrenome">
+
+            <label for="city">Cidade</label>
+            <input type="text" id="city" name="cidade">
+
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" name="telefone">
+
+            <label for="message">Mensagem</label>
+            <textarea name="mensagem" id="mesage" cols="30" rows="10"></textarea>
+
+            <input class="btn_enviar" type="submit" value="Enviar">
+
+        </form>
+    </section>
+
+    <footer class="">
+        <div class="bar">
+            <img src="images/logo1.svg" class="logo">
+            <p class="footer_text">
+                © 2024 C&S Travels. Turismo, Brasil. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>    
+</body>
+</html>

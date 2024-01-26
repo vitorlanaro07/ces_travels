@@ -1,0 +1,46 @@
+:root{
+    --gray: #34393d;
+    --orange: #d9593f;
+    --gray-white: #7e7979;;
+}   
+
+.header_title p{
+    margin:  1em 0 0.1em;
+}
+
+.contato{
+    padding: 10vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.6em;
+    color: #000;
+}
+
+input{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #000;
+    padding: .4em;
+}
+
+textarea{
+    color: #000;
+    font-size: 1.4em;
+    padding: .4em;
+}
+
+.btn_enviar{
+    text-align: center;
+    background-color: var(--gray);
+    color: var(--orange);
+    font-size: 1.8em;
+    font-weight: 700;
+    width: 4em;
+    margin: 1.3em auto 0;
+}
