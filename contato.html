@@ -6,6 +6,7 @@
     <title>C&STravels</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
@@ -13,7 +14,14 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <section class="container-message">
+        <div class="message">
+            <p class="message-text">Mensagem enviada com sucesso!</p>   
+            <button class="message-button" onclick="closeMessage()">OK</button>
+        </div>
+    </section>
+
     <button id="button_to_top" onclick="topFunction()"><i class="fa-solid fa-arrow-up"></i></button>
 
     <header>
@@ -31,7 +39,7 @@
     </div>
 
     <section class="contato">
-        <form action="/sending" method="post" class="form_contato">
+        <form action="/sending" class="form_contato" onsubmit="loadMessage();">
             <label for="name">Nome</label>
             <input type="text" id="name" name="nome">
 
@@ -47,10 +55,12 @@
             <label for="message">Mensagem</label>
             <textarea name="mensagem" id="mesage" cols="30" rows="10"></textarea>
 
-            <input class="btn_enviar" type="submit" value="Enviar">
+            <button class="btn_enviar button_submit" onclick="loadMessage()">Enviar</button>
+            <!-- <input class="btn_enviar" type="submit" value="Enviar" class="button_submit"> -->
 
-        </form>
     </section>
+
+    
 
     <footer class="">
         <div class="bar">
@@ -60,6 +70,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/contato.js"></script>
     <script src="js/script.js"></script>    
 </body>
 </html>
