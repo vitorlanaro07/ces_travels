@@ -4,8 +4,13 @@ const path = require('path');
 const filePath = path.resolve(__dirname);
 const nodemailer = require('nodemailer');
 const app = express();
+require('dotenv').config({path: './dev.env'});
+
+//Setting env variables
 const EMAIL = process.env.USER_ID;
 const PASSW = process.env.USER_KEY;
+
+console.log(EMAIL, PASSW);
 
 
 app.use(bodyParser.json());
@@ -14,11 +19,13 @@ app.use(express.static("./"));
 app.use(express.static("./pages"));
 
 
+//Index
 app.get('/', (req, res) => {
     res.sendFile(filePath + '/index.html');
 });
 
 
+//Sending Emails
 app.post('/sending', (req, res) => {
     console.log(req.body);
     const transporter = nodemailer.createTransport({
@@ -43,6 +50,7 @@ app.post('/sending', (req, res) => {
         if (error){
             console.error(error);
         }else{
+            console.log("Sended!");
             res.redirect('/contato');
         }
     })
@@ -51,9 +59,9 @@ app.post('/sending', (req, res) => {
 
 
 app.get('/contato', (req, res) => {
-
     res.sendFile(filePath + '/contato.html');
 });
+
 
 app.listen(5500, () => {
     console.log("Listening on port 5500");

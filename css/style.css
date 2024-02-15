@@ -39,11 +39,11 @@ html{
     font-size: 1em;
 }
 
+
 header{
     text-align: center;
+    margin-bottom: 1em;
 }
-
-
 
 .bar{
     content: "";
@@ -53,7 +53,8 @@ header{
 }
 
 .logo{
-    width: 12em;
+    width: 12em !important;
+    height: auto !important;
 }
 
 .menu{
@@ -82,6 +83,7 @@ header{
 }
 
 
+
 /* Header end */
 
 .header_title p{
@@ -90,13 +92,22 @@ header{
     font-weight: 900;
     text-shadow: #34393d 2px 1px 2px;
     text-align: center;
-    margin: 1em 0 1.5em;
+    
 
 }
 /* SlideShow beggining */
 
+img {
+    width: 95vw !important;
+    height: 95vw !important;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
 .slideshow{
-    width: 95%;
+    width: 95vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -152,7 +163,6 @@ header{
     background-color: var(--gray);
     width: 100%;
     box-shadow: black 1px 1px 1px;
-    margin: 0 0 5em;
 }
 
 .names{
@@ -170,6 +180,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 4em 1em;
 }
 
 .about{
@@ -181,17 +192,6 @@ header{
     align-self: center;
 }
 
-@media screen and (max-width: 480px){
-    .container-viagens{
-        flex-wrap: nowrap;
-        flex-direction: column
-    }
-
-    .about{
-        width: 80%;
-        margin: 0 auto 2em;
-    }
-}
 
 .id_place{
     font-size: 5em;
@@ -257,8 +257,21 @@ header{
 }
 
 .description_cities{
+    margin: 0 0 1em;
     color: #000;
-    margin: 0 0 2em;
+    text-align: justify;
+}
+
+.description_reserve{
+    color: #000;
+    font-size: 1.4em;
+    margin: .8em 0;
+    text-align: center;
+}
+
+.cities_section ul, .cities_section li{
+    color: #000;
+    font-size: 1.5em;
 }
 
 .button_cities{
@@ -286,4 +299,112 @@ footer .footer_text{
     opacity: 0.7;
 }
 
+@media screen and (min-width: 480px){
+    .container-viagens{
+        flex-wrap: nowrap;
+        flex-direction: column
+    }
 
+    .about{
+        width: 80%;
+        margin: 0 auto 2em;
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+    img {
+        width: 95vw !important;
+        height: 95vw !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 655px) {
+    img {
+        width: 95vw !important;
+        height: 95vw !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+} 
+
+
+@media screen and (min-width: 700px) {
+    img {
+        width: 50vw !important;
+        height: 50vw !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .slideshow{
+        width: 50vw !important;
+    }
+
+    .catalogue_trip-container{
+        display: flex;
+        flex-direction: row;
+        padding: 3em;
+    }
+
+    .catalogue_trip-container_information{
+        padding: 1em 0em 0 3em;
+    }
+
+    .cities_section{
+        gap: 1em !important;
+    }
+
+    .description_reserve{
+        margin: 2em 0;
+    }
+
+    .button_cities{
+        margin: 0 !important;
+    }
+}
+
+
+@media screen and (min-width: 834px) {
+    img {
+        width: 45vw !important;
+        height: 45vw !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .slideshow{
+        width: 45vw !important;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    img {
+        width: 45vw !important;
+        height: 45vw !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .slideshow{
+        width: 45vw !important;
+    }
+
+}
+
+@media screen and (min-width: 1284px) {
+    img {
+        width: 45vw !important;
+        height: 45vw !important;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .slideshow{
+        width: 45vw !important;
+    }
+} 

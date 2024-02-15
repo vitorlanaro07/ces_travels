@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C&STravels</title>
+    <link rel="icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
 
     <header>
         <div class="bar"></div>
-        <img src="../images/logo.svg" class="logo">
+        <img src="../images/logo.png" class="logo">
         <div class="menu">
             <a href="../index.html">Viagens</a>
             <a href="../quem-somos.html">Quem somos</a>
@@ -30,35 +31,48 @@
         <p>Beto Carrero World</p>
     </div>
 
-    <section class="slideshow">
-        <img src="../images/11/01.jpg" alt="" class="slides">
-        <img src="../images/11/02.jpg" alt="" class="slides">
-        <img src="../images/11/03.jpg" alt="" class="slides">
-        <img src="../images/11/04.jpg" alt="" class="slides">
-        <img src="../images/11/05.jpg" alt="" class="slides">
-        <img src="../images/11/06.jpg" alt="" class="slides">
-        <img src="../images/11/07.jpg" alt="" class="slides">
-        <img src="../images/11/08.jpg" alt="" class="slides">
-        <div class="pic_identifier">
-            <p class="pic_current pictures"></p>
-            <p class="pictures">/</p>
-            <p class="pic_total pictures"></p>
+
+    <section class="catalogue_trip-container">
+        <div class="catalogue_trip-container_slider">
+            <div class="slideshow">
+                <img src="../images/11/tabela_beto.jpeg" alt="" class="slides">
+                <img src="../images/11/01.jpg" alt="" class="slides">
+                <img src="../images/11/02.jpg" alt="" class="slides">
+                <img src="../images/11/03.jpg" alt="" class="slides">
+                <img src="../images/11/04.jpg" alt="" class="slides">
+                <img src="../images/11/05.jpg" alt="" class="slides">
+                <img src="../images/11/06.jpg" alt="" class="slides">
+                <img src="../images/11/07.jpg" alt="" class="slides">
+                <img src="../images/11/08.jpg" alt="" class="slides">
+                <div class="pic_identifier">
+                    <p class="pic_current pictures"></p>
+                    <p class="pictures">/</p>
+                    <p class="pic_total pictures"></p>
+                </div>
+                <i class="fa-solid fa-arrow-left btn_left btns_slideshow" onclick="plusDivs(-1)"></i>
+                <i class="fa-solid fa-arrow-right btn_right btns_slideshow" onclick="plusDivs(1)"></i>
+            </div>
         </div>
-        <i class="fa-solid fa-arrow-left btn_left btns_slideshow" onclick="plusDivs(-1)"></i>
-        <i class="fa-solid fa-arrow-right btn_right btns_slideshow" onclick="plusDivs(1)"></i>
-    </section>
+        <div class="catalogue_trip-container_information">
+            <div class="cities_section">
+                <p class="description_cities">
+                    Uma viagem para uma das cidades mais atrativas do Brasil. Balneário Camboriú tem sido considerada a "Dubai Brasileira". 
+                </p>
+                <p class="description_cities">
+                    Nossa hospedaria sendo bem próxima ao grande centro, próximo a Praia Central, ao Atlântico Shopping Center e do Calçadão, perfeito para os passeios!
+                </p>
+                <h4 class="description_reserve">
+                    Reserve agora mesmo!
+                </h4>
 
-    <section class="cities_section">
-        <p class="description_cities">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <a href="https://wa.me/5544998005430?text=Ol%C3%A1%2C+gostaria+de+estar+reservando+um+viagem%21" class="button_cities">Reservar</a>
+                <a href="https://wa.me/5544998005430?text=Ol%C3%A1%2C+gostaria+de+estar+reservando+um+viagem%21" class="button_cities">Reservar</a>
+            </div>
+        </div>
     </section>
 
     <footer class="">
         <div class="bar">
-            <img src="../images/logo1.svg" class="logo">
+            <img src="../images/logo.png" class="logo">
             <p class="footer_text">
                 © 2024 C&S Travels. Turismo, Brasil. Todos os direitos reservados.
             </p>
