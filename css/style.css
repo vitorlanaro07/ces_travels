@@ -14,8 +14,8 @@ html{
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: 'Economica', sans-serif;
-    color: hsl(0, 0%, 100%);
+    font-family: "Montserrat", sans-serif;
+    color: #000;
 }
 
 /* Header beggining */
@@ -43,6 +43,7 @@ html{
 header{
     text-align: center;
     margin-bottom: 1em;
+    
 }
 
 .bar{
@@ -65,6 +66,7 @@ header{
     position: relative;
     height: max-content;
     padding: 2px;
+    
 }
 
 .menu a{
@@ -72,14 +74,15 @@ header{
     text-decoration: none;
     padding: 0.7em 0.6em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     align-self: center;
     border: 1px #FFF solid;
     border-radius: 1px;
+    color: hsl(0, 0%, 100%);
 }
 
 .select{
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 
 
@@ -124,7 +127,7 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
+    display: none;
     flex-direction: row;
     background-color: var(--gray);
     opacity: .7;
@@ -297,16 +300,18 @@ footer .footer_text{
     font-size: .8em;
     margin: 1em 0 3em;
     opacity: 0.7;
+    text-align: center;
 }
 
-@media screen and (min-width: 480px){
+
+@media screen and (max-width: 480px){
     .container-viagens{
         flex-wrap: nowrap;
         flex-direction: column
     }
 
     .about{
-        width: 80%;
+        width: 70vw !important;
         margin: 0 auto 2em;
     }
 }

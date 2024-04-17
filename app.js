@@ -40,8 +40,8 @@ app.post('/sending', (req, res) => {
     });
 
     const mail_option = {
-        from :'gabaritocasaaa@gmail.com',
-        to:'gabaritocasaaa@gmail.com',
+        from :'travels.ces.2024@gmail.com',
+        to:'travels.ces.2024@gmail.com',
         subject: 'Travels',
         text: "Mensagem de "+req.body.nome+" "+req.body.sobrenome+" de "+req.body.cidade+" com o numero de telefone "+req.body.telefone+". Sua mensagem diz o seguinte: '"+req.body.mensagem+ "'."
     };
